@@ -5,5 +5,6 @@ class CalendarController < ApplicationController
   end
 
   def list
+    @events = Event.all.order(:start_time)
   end
 end

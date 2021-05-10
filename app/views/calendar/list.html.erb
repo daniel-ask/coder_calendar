@@ -1,2 +1,7 @@
-<h1>Calendar#list</h1>
+<h1>Lightning Talk List</h1>
 <p>Find me in app/views/calendar/list.html.erb</p>
+<ol class='list'>
+<% @events.each do |event| %>
+  <li><span><%= event.name %></span><span><%= event.start_time %></span></li>
+<% end %>
+</ol>
