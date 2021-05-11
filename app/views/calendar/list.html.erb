@@ -1,7 +1,7 @@
 <h1>Lightning Talk List</h1>
-<p>Find me in app/views/calendar/list.html.erb</p>
+<p><%#= link_to 'Generate Lightning Talks', lightning_talks_path, method: :post %></p>
 <ol class='list'>
 <% @events.each do |event| %>
-  <li><span><%= event.name %></span><span><%= event.start_time %></span></li>
+  <li><%= event.start_time.strftime('%d %b %Y') %>: <%= event.name %></li>
 <% end %>
 </ol>

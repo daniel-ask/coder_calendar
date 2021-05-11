@@ -27,10 +27,10 @@ names = %w[
   Jordan
   Ryan
 ]
-start_time = Date.parse('10-05-2021 14:00')
-end_time = Date.parse('10-05-2021 14:10')
+start_time = DateTime.parse('17-05-2021 14:00')
+end_time = DateTime.parse('17-05-2021 14:10')
 until names.empty?
-  unless start_time.between?(Date.parse('05-06-2021'), Date.parse('13-06-2021'))
+  unless start_time.between?(DateTime.parse('05-06-2021'), DateTime.parse('13-06-2021'))
     student = names.sample
     Event.create(name: "#{student}'s Lightning Talk", start_time: start_time, end_time: end_time)
     names.delete(student)
