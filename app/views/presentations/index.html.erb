@@ -1,0 +1,12 @@
+<main>
+<h1>Presentations</h1>
+<% @presentations.each do |presentation| %>
+  <p><%= presentation.name %></p>
+<% end %>
+<h3>Add new presentation group</h3>
+<%= form_with model: @presentation do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<%= f.submit 'Add Presentation Group' %>
+<% end %>
+</main>

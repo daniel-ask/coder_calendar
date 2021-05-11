@@ -7,6 +7,7 @@ class CalendarController < ApplicationController
   def list
     @events = Event.all.order(:start_time)
   end
+  
 
   def lightning_talks
     Event.destroy_all
