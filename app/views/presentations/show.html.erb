@@ -1,0 +1,20 @@
+<h1>
+  <%= @presentation.name %>
+</h1>
+<%= link_to 'Randomise', random_path %>
+<ol>
+  <% @entries.each do |entry| %>
+    <li><%= entry.name %></li>
+  <% end %>
+</ol>
+
+<h2>Add a Student/Group:</h2>
+<%= form_with model: [ @presentation, @presentation.presentation_entries.build ] do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

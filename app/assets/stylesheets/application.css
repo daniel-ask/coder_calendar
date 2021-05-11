@@ -23,3 +23,10 @@ th{
   background-color: maroon;
   color: whitesmoke;
 }
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
