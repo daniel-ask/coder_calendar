@@ -30,6 +30,11 @@ main{
   justify-content: center;
   align-items: center;
 }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
 .nav-link {
   color: #000;
   text-transform: uppercase;
@@ -39,8 +44,8 @@ main{
   display: inline-block;
   padding: 15px 20px;
   position: relative;
+  min-width: 230px;
 }
-
 .nav-link:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
