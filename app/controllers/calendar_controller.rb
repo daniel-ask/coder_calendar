@@ -52,4 +52,7 @@ class CalendarController < ApplicationController
 
     redirect_to root_path
   end
+
+  def standup
+  end
 end

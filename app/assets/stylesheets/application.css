@@ -17,6 +17,8 @@
 *{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 th{
@@ -34,6 +36,11 @@ main{
 nav {
   display: flex;
   justify-content: space-around;
+}
+
+h1{
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 .nav-link {
   color: #000;

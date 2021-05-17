@@ -6,4 +6,5 @@ Rails.application.routes.draw do
     resources :presentation_entries 
   end
   get '/presentation/:id/random', to: 'presentations#random', as: 'random'
+  get '/standups', to: 'calendar#standup', as: 'standup'
 end

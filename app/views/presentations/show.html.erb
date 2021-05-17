@@ -2,7 +2,7 @@
   <%= @presentation.name %>
 </h1>
 <%= link_to 'Randomise', random_path %>
-<ol>
+<ol class='list'>
   <% @entries.each do |entry| %>
     <li><%= entry.name %></li>
   <% end %>
